@@ -179,7 +179,7 @@ header .main-btn.active {
   border-radius: 2rem;
   -webkit-box-shadow: 0px 7px 15px 2px rgba(8,26,94,0.15); 
   box-shadow: 0px 7px 15px 2px rgba(8,26,94,0.15); 
-  padding: 5.7rem 0 3rem;
+  padding: 4.2rem 0 2rem;
   color: #000e3f;
 }
 .header-table-row {
@@ -188,7 +188,7 @@ header .main-btn.active {
 .table-block h3 {
   font-weight: 500;
   font-size: 2.6rem;
-  padding-left: 8.68%;
+  padding-left: 6.68%;
   margin-bottom: 1.85rem;
 }
 #address {
@@ -201,7 +201,7 @@ header .main-btn.active {
   margin-left: 15.2%; 
 }
 .table-row {
-  padding: 2.5rem 7.64% 2.5rem 5.56%;
+  padding: 2.5rem 5.64% 2.5rem 3.56%;
   font-size: 1.6rem;
 }
 .table-row:nth-child(even) {
@@ -388,12 +388,12 @@ header .main-btn.active {
   border: 1px solid #d8d8d8;
   border-radius: 4px;
   font-size: 12px;
-  color: #000;
+  color: #0e1f63;
   width: 43.38%;
 }
 .search-input::placeholder{
   font-size: 12px;
-  color: #000;
+  color: #d8d8d8;
 }
 .table-col.address {
   width: 16.75%;
@@ -693,20 +693,12 @@ span.missing {
   .header-subtitle {
     font-size: 1.8rem;
   }
-  .header-info-block {
-    height: auto;
-  }
-  .header-info-block .row {
-    padding: 0;
-    flex-direction: column;
-    align-items: center;
-  }
-  .header-margin-block {
-    display: none;
-  }
   .header-info-title {
     font-size: 1.6rem;
-    margin-bottom: 20px;
+  }
+  .header-info-block .row {
+    height: 100%;
+    padding: 0;
   }
   .header-info-text {
     font-size: 2.6rem;
@@ -743,7 +735,6 @@ span.missing {
   }
   .convert-block {
     width: 100%;
-    padding: 0;
     margin-bottom: 3rem;
   }
   .table-block h3 {
