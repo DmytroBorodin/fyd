@@ -66,14 +66,21 @@ body {
   width: 52.966%;
   margin-left: 14.8%;
 }
+.toggle-btn {
+  position: absolute;
+  top: 0;
+  right: 13px;
+  transform: translateY(-100%);
+  display: none;
+}
 .menu {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 .menu-link {
-  font-size: 1.4rem;
-  font-weight: 400px;
+  font-size: 1.6rem;
+  font-weight: 400;
   color: #fff;
   padding: 1.2rem 0 1.2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
@@ -115,14 +122,14 @@ header .main-btn.active {
   text-align: center;
 }
 .header-title{
-  font-size: 4.2rem;
+  font-size: 5rem;
   margin-bottom: 4.5rem;
 }
 .header-grey {
   color: #b4b4b4;
 }
 .header-subtitle {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
 }
 .header-info-block {
   margin-top: 5.73%;
@@ -141,11 +148,13 @@ header .main-btn.active {
   text-align: center;
 }
 .header-info-title {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 300;
   color: #c1c3cf;
 }
 .header-info-text {
-  font-size: 2.7rem;
+  font-size: 3rem;
+  font-weight: 500;
   text-transform: uppercase;
   padding-bottom: 1rem;
 }
@@ -168,8 +177,8 @@ header .main-btn.active {
 .table-block {
   background: #fff;
   border-radius: 2rem;
-  -webkit-box-shadow: 0px 7px 15px 2px rgba(240,240,240,0.98); 
-  box-shadow: 0px 7px 15px 2px rgba(240,240,240,0.98);
+  -webkit-box-shadow: 0px 7px 15px 2px rgba(8,26,94,0.15); 
+  box-shadow: 0px 7px 15px 2px rgba(8,26,94,0.15); 
   padding: 5.7rem 0 3rem;
   color: #000e3f;
 }
@@ -177,7 +186,8 @@ header .main-btn.active {
   justify-content: flex-start;
 }
 .table-block h3 {
-  font-size: 2rem;
+  font-weight: 500;
+  font-size: 2.6rem;
   padding-left: 8.68%;
   margin-bottom: 1.85rem;
 }
@@ -241,7 +251,8 @@ header .main-btn.active {
   width: 27.12%;
 }
 .convert-block-title {
-  font-size:  1.2rem;
+  font-size:  1.4rem;
+  font-weight: 400;
   color: #81859e;
   margin-bottom: 2.4rem;
 }
@@ -278,8 +289,20 @@ header .main-btn.active {
   color: #cfd1db;
   font-size: 1.2rem;
 }
+.currency-input {
+  width: 30%;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: #cfd1db;
+}
+.currency-input::placeholder {
+  font-size: 1.2rem;
+  color: #cfd1db;
+}
 .currency-text.currency-name{
   margin-right: 2.6rem;
+  text-transform: uppercase;
 }
 .currency-block .currency-text{
   margin-right: 1.3rem;
@@ -459,8 +482,8 @@ span.missing {
     width: 720px;
   }
   .menu-block {
-    width: 52.966%;
-    margin-left: 5%;
+    width: 60%;
+    margin-left: 2%;
   }
   .main-btn {
     height: 40px;
@@ -521,38 +544,57 @@ span.missing {
   .header-logo {
     width: 12.8%;
   } 
+  nav {
+    position: relative;
+  }
   .burger-btn {
     display: block;
     margin-left: 4.33%;
     width: 30px;
     height: auto;
   }
-  .burger-btn svg {
-    width: 100%;
-    fill: #fff;
-  }
   .menu-block {
-    top: -200%;
-    left: 0;
     position: absolute;
+    left: 0;
+    bottom: -1.5rem;
+    padding: 0;
+    border-radius: 1.5rem;
+    transform: translateY(100%);
     width: 100%;
-    min-height: 100vh;
-    z-index: 4;
     background-color: #fff;
     margin-left: 0;
     transition: all 0.3s ease;
   }
   .menu-block.active {
-    top: 0;
+    padding: 2rem;
+  }
+  .toggle-btn {
+    width: 0;
+    height: 0;
+    border-color: transparent transparent #fff;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgb(255, 255, 255);
+    border-left-color: transparent;
+    border-style: solid;
+    border-width: 0 12px 12px;
+    cursor: pointer;
+  }
+  .toggle-btn.active {
+    display: block;
   }
   .menu {
-    padding-top: 7rem;
+    display: none;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+  }
+  .menu-block.active .menu {
+    display: flex;
   }
   .menu-link {
+    font-weight: 500;
     color: #081a5e;
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .menu-link:hover {
     border-bottom: 1px solid #081a5e;
@@ -571,18 +613,30 @@ span.missing {
   header .main-btn.active {
     margin-left: 4.333%;
   }
-  .close-btn {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 25px;
-    height: auto;
-    z-index: 5;
+  .burger-btn {
+    width: 22px;
+    height: 18px;
+    margin-right: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  .close-btn svg {
+  .burger-btn.active {
+    justify-content: center;
+  }
+  .burger-btn span{
     width: 100%;
-    fill: #081a5e;;
+    height: 2px;
+    background: #fff;
+    transition: all 0.3s ease;
+  }.burger-btn.active span:nth-child(1) {
+    transform: translateY(100%) rotate(45deg);
+  }
+  .burger-btn.active span:nth-child(3) {
+    transform: translateY(-100%) rotate(-45deg);
+  }
+  .burger-btn.active span:nth-child(2) {
+    opacity: 0;
   }
   .s-2 .row {
     flex-direction: column;
@@ -639,14 +693,24 @@ span.missing {
   .header-subtitle {
     font-size: 1.8rem;
   }
+  .header-info-block {
+    height: auto;
+  }
   .header-info-block .row {
     padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-margin-block {
+    display: none;
   }
   .header-info-title {
     font-size: 1.6rem;
+    margin-bottom: 20px;
   }
   .header-info-text {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
+    line-height: 1.2;
     padding-bottom: 0.8rem;
   }
   .table-block {
@@ -674,11 +738,32 @@ span.missing {
   #percent {
     padding-left: 12.5%;
   }
-   .convert-block {
-    width: 70%;
-  }
   .s-2 .main-btn {
     width: 70%;
+  }
+  .convert-block {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+  .table-block h3 {
+    font-size: 3.2rem;
+    text-align: center;
+    padding-left: 0;
+  }
+  .s-3 .table-title-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.05rem;
+  }
+  .s-3 .table-title-block h3 {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .search-input {
+    width: 90%;
+    margin: 0;
   }
   #s-col-title{
     margin-left: 2.9%;
@@ -707,6 +792,6 @@ span.missing {
     font-size: 7px;
   }
   .container {
-    width: 98%;
+    width: 310px;
   }
 }

@@ -39,12 +39,15 @@ let body = document.querySelector('body');
 let burgerBtn = document.querySelector('.burger-btn');
 let closeBtn = document.querySelector('.close-btn');
 let menuBlock = document.querySelector('.menu-block');
+let toggleBtn = document.querySelector('.toggle-btn');
 
 burgerBtn.addEventListener('click', () => {
-	menuBlock.classList.add('active');
-	body.classList.add('locked');
+	burgerBtn.classList.toggle('active');
+	menuBlock.classList.toggle('active');
+	toggleBtn.classList.toggle('active');
 })
-closeBtn.addEventListener('click', () => {
+toggleBtn.addEventListener('click', () => {
+	burgerBtn.classList.remove('active');
 	menuBlock.classList.remove('active');
-	body.classList.remove('locked');
+	toggleBtn.classList.remove('active');
 })

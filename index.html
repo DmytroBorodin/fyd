@@ -4,7 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Untitled</title>
+		<title>FYD</title>
+		<link rel="icon" type="image/png" href="https://avatars0.githubusercontent.com/u/48912706?s=400&amp;u=085d0dce006fd3428d6105f589267377cf62097a&amp;v=4">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="author" href="humans.txt">
@@ -15,9 +16,7 @@
 				<nav>
 					<img src="imgs/Logo_FYD.png" alt="" class="header-logo">
 					<div class="menu-block">
-						<div class="close-btn">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style></style></defs><title>close</title><path class="cls-1" d="M6.7,8,0,14.7,1.3,16,8,9.3,14.7,16,16,14.7,9.3,8,16,1.3,14.7,0,8,6.7,1.3,0,0,1.3Z"/></svg>
-						</div>
+						<span class="toggle-btn"></span>
 						<ul class="menu">
 							<li class="menu-item">
 								<a href="" class="menu-link">
@@ -54,9 +53,9 @@
 						Swap
 						</button>
 						<div class="burger-btn">
-							<svg  viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M0 2.875C0 1.771 0.896 0.875 2 0.875H22.75C23.854 0.875 24.75 1.771 24.75 2.875C24.75 3.979 23.854 4.875 22.75 4.875H2C0.896 4.875 0 3.979 0 2.875ZM22.75 9.375H2C0.896 9.375 0 10.271 0 11.375C0 12.479 0.896 13.375 2 13.375H22.75C23.854 13.375 24.75 12.479 24.75 11.375C24.75 10.271 23.855 9.375 22.75 9.375ZM22.75 17.875H2C0.896 17.875 0 18.771 0 19.875C0 20.979 0.896 21.875 2 21.875H22.75C23.854 21.875 24.75 20.979 24.75 19.875C24.75 18.771 23.855 17.875 22.75 17.875Z"/>
-							</svg>
+							<span></span>
+							<span></span>
+							<span></span>
 						</div>
 					</div>
 				</nav>
@@ -359,9 +358,7 @@
 								I want to exchange
 							</h4>
 							<div class="select-block">
-								<span class="currency-text">
-									200
-								</span>
+								<input type="number" placeholder="200" class='currency-input'>
 								<span class="currency-text currency-name" id='main-currency-block'>
 									usd
 								</span>
