@@ -50,7 +50,8 @@ body {
  header {
   width: 100%;
   padding: 6.5rem 0 41.6rem;
-  background-image: url('../imgs/header_bg-min.webp');
+  background-image: url('../imgs/header_bg-min.webp'),
+  url(../imgs/header_bg-min.png);
   background-position: center;
   background-size: cover;
   color: #fff;
