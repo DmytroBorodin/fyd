@@ -48,7 +48,7 @@ body {
  header {
   width: 100%;
   padding: 6.5rem 0 41.6rem;
-  background-image: url('../imgs/header_bg.png');
+  background-image: url('../imgs/header_bg-min.png');
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -189,7 +189,7 @@ header .main-btn.active {
   font-weight: 500;
   font-size: 2.6rem;
   padding-left: 6.68%;
-  margin-bottom: 1.85rem;
+  margin-bottom: 1rem;
 }
 #address {
   margin-left: 11.5%;
