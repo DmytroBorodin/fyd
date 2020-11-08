@@ -7,7 +7,7 @@ header {
 
 .wrapper {
   padding: 4.5rem 0 49rem;
-  background-image: url("../imgs/header_bg-min.png");
+  background-image: url("../imgs/header_bg-min-min.webp"), url("../imgs/header_bg-min.png");
 }
 
 nav {
