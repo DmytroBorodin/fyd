@@ -51,3 +51,9 @@ toggleBtn.addEventListener('click', () => {
 	menuBlock.classList.remove('active');
 	toggleBtn.classList.remove('active');
 })
+
+
+if(navigator.userAgent.indexOf("Chrome") != -1 )
+    {
+        alert('Chrome');
+    }
