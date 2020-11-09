@@ -17,8 +17,12 @@ nav {
   align-items: center;
 }
 
-.header-logo {
+.header-logo-link {
   width: 9.8%;
+}
+
+.header-logo {
+  width: 100%;
 }
 
 .menu-block {
@@ -304,7 +308,7 @@ header .main-btn.active {
     padding: 0;
   }
 
-  .header-logo {
+  .header-logo-link {
     width: 15.8%;
   }
 

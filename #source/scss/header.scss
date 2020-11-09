@@ -15,8 +15,11 @@
   justify-content: space-between;
   align-items: center;
  }
-.header-logo {
+.header-logo-link {
   width: 9.8%;
+}
+.header-logo {
+  width: 100%;
 }
 .menu-block {
   width: 38.966%;
@@ -254,7 +257,7 @@ header .main-btn.active {
       padding: 0;
     }
   }
-  .header-logo {
+  .header-logo-link {
     width: 15.8%;
   } 
   nav {
