@@ -72,7 +72,7 @@
   padding: 2rem 3.64% 2rem 2.56%;
 }
 .table-row .table-col.col-address:nth-child(2) span {
-  border-bottom: 1px solid #b5b5b5;
+  text-decoration: underline;
 }
 
 .col-address {
