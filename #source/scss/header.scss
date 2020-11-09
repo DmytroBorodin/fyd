@@ -5,8 +5,9 @@
   color: #fff;
  }
  .wrapper {
-  padding: 4.5rem 0 49rem;
-  background-image: url('../imgs/header_bg-min.png');
+  padding: 4.5rem 0 37rem;
+  background-image: url('../imgs/header_bg-min-min.webp'),
+                    url('../imgs/header_bg-min-min.jp2');
  }
  nav {
   width: 100%;
@@ -71,13 +72,13 @@ header .main-btn.active {
 }
 
 .header-title-block {
-  margin-top: 13.375%;
+  margin-top: 10.375%;
 }
 .header-title, .header-subtitle {
   text-align: center;
 }
 .header-title{
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: 400;
   margin-bottom: 6.5rem;
   span {
@@ -95,7 +96,7 @@ header .main-btn.active {
   }
 }
 .header-info-block {
-  margin-top: 11.73%;
+  margin-top: 14.73%;
   height: 12.5rem;
 }
 .header-info-block .row {
@@ -128,7 +129,7 @@ header .main-btn.active {
 }
 @media screen and (max-width: 1600px) {
   .wrapper {
-    padding: 4.2rem 0 41rem;
+    padding: 4.2rem 0 37rem;
    }
   .header-title-block {
     margin-top: 12.375%;
@@ -161,6 +162,9 @@ header .main-btn.active {
   }
 }
 @media screen and (max-width: 1199px) {
+  .wrapper {
+    padding: 3.8rem 0 26rem;
+   }
   .header-title-block {
     margin-top: 14.375%;
   }
@@ -207,7 +211,7 @@ header .main-btn.active {
 }
 @media screen and (max-width: 991px) {
   .wrapper {
-    padding: 3.2rem 0 28rem;
+    padding: 3.2rem 0 26rem;
   }
   .menu-block {
     width: 60%;
@@ -231,10 +235,10 @@ header .main-btn.active {
   }
   .header-info-block {
     margin-top: 8.73%;
-    height: 9rem;
+    height: 7rem;
   }
   .header-info-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .header-info-text {
     font-size: 2.8rem;
