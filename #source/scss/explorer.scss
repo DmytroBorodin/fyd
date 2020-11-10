@@ -1,0 +1,268 @@
+/* Header */
+.header-title {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 5rem;
+    margin-left: 5%;
+  }
+}
+.header-subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  font-size: 3.6rem;
+}
+
+/* S-1 */
+.s-1 {
+  .main-table {
+    grid-template-columns: 2fr 4fr 2fr ;
+    .table-header {
+      &.age {
+        padding-right: 35.5%;
+      }
+    }
+  }
+  .row {
+    align-items: stretch;
+    .table-block:nth-child(2) {
+      width: 33.25%;
+      padding: 3.5rem;
+    }
+  }
+  .container.table {
+    padding-top: 4.3%;
+    width: 64.16%;
+    margin: 0;
+  }
+  .v-more {
+    margin-top: 4rem;
+  }
+}
+.qr-code {
+  width: 100%;
+}
+.table-block h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8.68%;
+  margin-bottom: 0;
+  .sub-v {
+    text-align: left;
+  }
+}
+.btn-label {
+  position: relative;
+  cursor: pointer;
+  margin-right: 7.68%;
+}
+#btn {
+  width: 7rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  appearance: none;
+  -webkit-appearance: none;  
+  -moz-appearance: none;
+}
+.btn-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 7rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  background: #b5b5b5;
+  transition: all 0.3s ease;
+  span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0.3rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+}
+#btn:checked + .btn-block {
+   background: #4fbe79;
+   span {
+    left: calc(100% - 0.3rem);
+    transform: translate(-100%, -50%);
+  }
+}
+/* S-3 */
+.s-3 {
+  padding: 4rem 0 6.5rem;
+}
+.table-title-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.05rem;
+}
+.s-3 h3 {
+  margin-bottom: 0;
+}
+.header-table-row {
+    justify-content: space-between;
+  }
+.search-input {
+  margin-right: 5.01%;
+  padding: 1.3rem 3rem;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #0e1f63;
+  width: 33.38%;
+}
+.search-input::placeholder{
+  font-size: 12px;
+  color: #d8d8d8;
+}
+span.enable {
+  color: #00ab00;
+}
+span.missing {
+  color: #b4b4b4;
+}
+.container.table {
+  background-color: #fff;
+}
+.main-table {
+  width: 100%;
+  color: #000e3f;
+  font-size: 1.6rem;
+  & span {
+    font-weight: 700;
+  }
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr ;
+  .table-header {
+    font-weight: 700;
+  }
+  .table-header,
+  .table-col {
+    padding: 2rem 0.5rem;
+    text-align: center;
+    &.hide-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    &.even {
+      background-color: #f9f8fc;
+    }
+    &.number {
+      width: 100%;
+    }
+    &.address {
+      width: 100%;
+      text-align: left;
+    }
+  }
+  .table-header {
+    align-self: center;
+    text-align: center;
+    &.age {
+      padding-right: 23.5%;
+    }
+  }
+}
+@media screen and (max-width: 1367px) {
+  .header-title {
+    font-size: 4.8rem;
+    img {
+      width: 4rem;
+      margin-left: 5%;
+    }
+  }
+  .s-1 {
+    .container.table {
+      padding-top: 3.7%;
+    }
+    .v-more {
+      margin-top: 3rem;
+    }
+  }
+}
+@media screen and (max-width: 1199px) {
+  .header-title {
+    font-size: 4rem;
+    img {
+      width: 3.2rem;
+      margin-left: 5%;
+    }
+  }
+  .header-subtitle {
+    font-size: 3.2rem;
+  }
+  .s-1 {
+    .row {
+      align-items: center;
+      flex-direction: column;
+      .table-block:nth-child(2) {
+        width: 100%;
+        padding: 3.5rem;
+      }
+    }
+    .container.table {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+  }
+  .qr-code {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header-title {
+    font-size: 4rem;
+    span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    img {
+      width: 3.2rem;
+      margin-left: 5%;
+    }
+  }
+  .header-subtitle {
+    font-size: 2.8rem;
+  }
+  .arrow-btn {
+    width: 1.2rem;
+  }
+  .main-table {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main-table {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .header-subtitle {
+    font-size: 2.4rem;
+  }
+  .header-info-title {
+    font-size: 1.4rem;
+  }
+  .header-info-text {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .search-input {
+    width: 90%;
+    margin: 0;
+  }
+}

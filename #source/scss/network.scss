@@ -3,82 +3,27 @@
   font-weight: 700;
 }
 .header-subtitle {
+  color: rgba(255, 255, 255, 0.5);
   font-weight: 400;
   font-size: 3.6rem;
 }
 
 /* S-1 */
-.s-1-left-block {
-  width: 47.29%;
-  .header-table-row {
-    justify-content: space-between;
-    text-align: center;
-  }
-  #fr-title {
-    padding-right: 7rem;
-  }
-  .col-title {
-    width: 30%;
-  }
-  .table-col {
-    width: 30%;
-    text-align: center;
+.s-1 {
+  .main-table {
+    grid-template-columns: 1.5fr 4fr 4fr 4fr 4fr;
   }
 }
-.s-1-main-row {
-  align-items: stretch;
-}
-.page-table.type-1 {
-  margin-top: 2rem;
-  padding: 0 7.07% 0 2.21%;
-}
-.t-row {
-  padding: 2.5rem 0 2.5rem;
-  border-top: 1px solid #d6d7e2;
-  .block {
-    width: 33.333%;
-    padding-left: 6.9%;
-  } 
-}
-.f-t-row {
-  .main-block-text {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
-}
-.block-title {
-  font-size: 1.4rem;
-  font-weight: 400;
-  margin-bottom: 2.5rem;
-}
-.main-block-text {
-  font-size: 2.2rem;
-  font-weight: 700;
-}
-.block-text {
-  font-size: 1.8rem;
-}
-.table-row {
-  padding: 2rem 3.64% 2rem 2.56%;
-  .table-col{
-    &.col-address:nth-child(2) span{
-      text-decoration: underline;
-    }
-  }
-}
-.col-address {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+
 .table-block h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 8.68%;
+  .sub-v {
+    text-align: left;
+  }
 }
-
 /* S-3 */
 .s-3 {
   padding: 4rem 0 6.5rem;
@@ -190,6 +135,9 @@ span.missing {
   .s-3 .col-title {
     text-align: center;
   }
+  .main-table {
+    font-size: 1.4rem;
+  }
 }
 @media screen and (max-width: 767px) {
   .main-table {
@@ -208,21 +156,10 @@ span.missing {
     font-size: 2rem;
     font-weight: 400;
   }
-  .col-address {
-    width: 28.75%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  .t-row {
-    padding: 2.5rem 0 2.5rem;
-    border-top: 1px solid #d6d7e2;
-    .block {
-      padding-left: 0;
-      display: flex;
-      flex-direction:column;
-      align-items: center;
-    } 
+  .s-1 {
+    .main-table {
+      grid-template-columns: 1fr 4fr 3fr 5.5fr 3.5fr;
+    }
   }
   .s-3 .table-title-block {
     display: flex;

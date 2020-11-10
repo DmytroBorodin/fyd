@@ -2,6 +2,12 @@ let selectItemsBlock = document.querySelector('.select-items-block');
 let selectedItemsArr = [...selectItemsBlock.querySelectorAll('.currency-block')];
 let selectItemsBlockBtn = document.getElementById('select-items-btn');
 let mainItemBlock = document.getElementById('main-item-block');
+let header = document.querySelector('header');
+let headerWrapper = header.querySelector('.wrapper')
+
+if(navigator.userAgent.indexOf("Safari") != -1){
+    headerWrapper.classList.add('safari-bg');
+}
 
 
 selectItemsBlockBtn.addEventListener('click', () => {

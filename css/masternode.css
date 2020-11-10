@@ -102,6 +102,10 @@
   margin-bottom: 0;
 }
 
+.header-table-row {
+  justify-content: space-between;
+}
+
 .search-input {
   margin-right: 5.01%;
   padding: 1.3rem 3rem;
@@ -117,37 +121,6 @@
   color: #d8d8d8;
 }
 
-.table-col.address {
-  width: 16.75%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-#s-col-title {
-  margin-left: 11.84%;
-}
-
-#th-col-title {
-  margin-left: 19.85%;
-}
-
-#fs-col-title {
-  margin-left: 7.35%;
-}
-
-#ff-col-title {
-  margin-left: 8.65%;
-}
-
-#sx-col-title {
-  margin-left: 8.12%;
-}
-
-#sv-col-title {
-  margin-left: 9.12%;
-}
-
 span.enable {
   color: #00ab00;
 }
@@ -156,52 +129,55 @@ span.missing {
   color: #b4b4b4;
 }
 
-@media screen and (max-width: 1600px) {
-  #s-col-title {
-    margin-left: 11.84%;
-  }
-
-  #th-col-title {
-    margin-left: 18.85%;
-  }
-
-  #fs-col-title {
-    margin-left: 6.75%;
-  }
-
-  #ff-col-title {
-    margin-left: 8.35%;
-  }
+.container.table {
+  background-color: #fff;
 }
-@media screen and (max-width: 1367px) {
-  #percents {
-    margin-left: 15.2%;
-  }
 
-  #s-col-title {
-    margin-left: 9.84%;
-  }
-
-  #th-col-title {
-    margin-left: 19.05%;
-  }
-
-  #fs-col-title {
-    margin-left: 6.04%;
-  }
-
-  #ff-col-title {
-    margin-left: 7%;
-  }
-
-  #sx-col-title {
-    margin-left: 7.12%;
-  }
-
-  #sv-col-title {
-    margin-left: 7.9%;
-  }
+.main-table {
+  width: 100%;
+  color: #000e3f;
+  font-size: 1.6rem;
+  display: grid;
+  grid-template-columns: 2fr 7fr 3fr 3fr 4fr 4fr 3fr;
 }
+.main-table span {
+  font-weight: 700;
+}
+.main-table .table-header {
+  font-weight: 700;
+}
+.main-table .table-header,
+.main-table .table-col {
+  padding: 2rem 0.5rem;
+  text-align: center;
+}
+.main-table .table-header.hide-text,
+.main-table .table-col.hide-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main-table .table-header.even,
+.main-table .table-col.even {
+  background-color: #f9f8fc;
+}
+.main-table .table-header.number,
+.main-table .table-col.number {
+  width: 100%;
+}
+.main-table .table-header.address,
+.main-table .table-col.address {
+  width: 100%;
+  text-align: left;
+}
+.main-table .table-header {
+  align-self: center;
+  text-align: center;
+}
+.main-table .table-header.address {
+  padding-right: 3rem;
+}
+
 @media screen and (max-width: 1199px) {
   .header-subtitle {
     font-size: 3.2rem;
@@ -214,42 +190,10 @@ span.missing {
   .table-col.top {
     width: 20%;
   }
-
-  #percents {
-    margin-left: 10.2%;
-  }
-
-  #s-col-title {
-    margin-left: 7.84%;
-  }
-
-  #th-col-title {
-    margin-left: 18.05%;
-  }
-
-  #fs-col-title {
-    margin-left: 5.04%;
-  }
-
-  #ff-col-title {
-    margin-left: 5%;
-  }
-
-  #sx-col-title {
-    margin-left: 6.12%;
-  }
-
-  #sv-col-title {
-    margin-left: 6.72%;
-  }
 }
 @media screen and (max-width: 991px) {
   .header-subtitle {
     font-size: 2.8rem;
-  }
-
-  #percents {
-    margin-left: 15.2%;
   }
 
   .s-1-main-row {
@@ -264,15 +208,6 @@ span.missing {
     margin-bottom: 4rem;
   }
 
-  #percent {
-    padding-left: 17.5%;
-  }
-
-  #amount {
-    text-align: right;
-    padding-right: 7.5%;
-  }
-
   .table-col.top {
     width: 20%;
   }
@@ -284,46 +219,11 @@ span.missing {
   .s-3 .col-title {
     text-align: center;
   }
-
-  #s-col-title {
-    margin-left: 7.84%;
-  }
-
-  #th-col-title {
-    margin-left: 11.55%;
-  }
-
-  #ff-col-title {
-    margin-left: 2.8%;
-  }
-
-  #sx-col-title {
-    margin-left: 3.52%;
-  }
-
-  #sv-col-title {
-    margin-left: 5.72%;
-  }
-
-  #fs-col-title {
-    margin-left: 2.1%;
-  }
-
-  #ff-col-title {
-    margin-left: 2.8%;
-  }
-
-  #sx-col-title {
-    margin-left: 3.52%;
-  }
-
-  #sv-col-title {
-    margin-left: 5.72%;
-  }
 }
 @media screen and (max-width: 767px) {
-  #th-col-title {
-    margin-left: 9.55%;
+  .main-table {
+    font-size: 1.2rem;
+    grid-template-columns: 1fr 4fr 4fr 5fr 4fr 3fr 3fr;
   }
 }
 @media screen and (max-width: 575px) {
@@ -345,22 +245,6 @@ span.missing {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
-
-  #address {
-    margin-left: 13.5%;
-  }
-
-  #balance {
-    margin-left: 29%;
-  }
-
-  #percents {
-    margin-left: 23.7%;
-  }
-
-  #percent {
-    padding-left: 12.5%;
   }
 
   .t-row {
@@ -391,31 +275,7 @@ span.missing {
     margin: 0;
   }
 
-  #s-col-title {
-    margin-left: 2.9%;
-  }
-
-  #th-col-title {
-    margin-left: 4.5%;
-  }
-
-  #fs-col-title {
-    margin-left: 1%;
-  }
-
-  #ff-col-title {
-    margin-left: 2.8%;
-  }
-
-  #sx-col-title {
-    margin-left: 3.52%;
-  }
-
-  #sv-col-title {
-    margin-left: 5.72%;
-  }
-
-  .days-col {
-    margin-left: 2%;
+  .main-table {
+    grid-template-columns: 1fr 5fr 3.5fr 3.5fr 4fr 5fr 3fr;
   }
 }

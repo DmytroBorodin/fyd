@@ -53,71 +53,55 @@
   font-size: 12px;
   color: #d8d8d8;
 }
-.table-col.address {
-  width: 16.75%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-#s-col-title{
-  margin-left: 11.84%;
-}
-#th-col-title{
-  margin-left: 19.85%;
-}
-#fs-col-title{
-  margin-left: 7.35%;
-}
-#ff-col-title{
-  margin-left: 8.65%;
-}
-#sx-col-title{
-  margin-left: 8.12%;
-}
-#sv-col-title{
-  margin-left: 9.12%;
-}
 span.enable {
   color: #00ab00;
 }
 span.missing {
   color: #b4b4b4;
 }
-@media screen and (max-width: 1600px) {
-  #s-col-title{
-    margin-left: 11.84%;
+.main-table {
+  width: 100%;
+  color: #000e3f;
+  font-size: 1.6rem;
+  & span {
+    font-weight: 700;
   }
-  #th-col-title{
-    margin-left: 18.85%;
+  display: grid;
+  grid-template-columns: 2fr 7fr 3fr 3fr 4fr 4fr 3fr;
+  .table-header {
+    font-weight: 700;
   }
-  #fs-col-title{
-    margin-left: 6.75%;
+  .table-header,
+  .table-col {
+    padding: 2rem 0.5rem;
+    text-align: center;
+    &.hide-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    &.even {
+      background-color: #f9f8fc;
+    }
+    &.number {
+      width: 100%;
+    }
+    &.address {
+      width: 100%;
+      text-align: left;
+    }
   }
-  #ff-col-title{
-    margin-left: 8.35%;
+  .table-header {
+    align-self: center;
+    text-align: center;
+    &.address {
+      padding-right: 3rem;
+    }
   }
 }
 @media screen and (max-width: 1367px) {
   #percents{
     margin-left: 15.2%; 
-  }
-  #s-col-title{
-    margin-left: 9.84%;
-  }
-  #th-col-title{
-    margin-left: 19.05%;
-  }
-  #fs-col-title{
-    margin-left: 6.04%;
-  }
-  #ff-col-title{
-    margin-left: 7%;
-  }
-  #sx-col-title{
-    margin-left: 7.12%;
-  }
-  #sv-col-title{
-    margin-left: 7.9%;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -129,24 +113,6 @@ span.missing {
   }
   #percents{
     margin-left: 10.2%; 
-  }
-  #s-col-title{
-    margin-left: 7.84%;
-  }
-  #th-col-title{
-    margin-left: 18.05%;
-  }
-  #fs-col-title{
-    margin-left: 5.04%;
-  }
-  #ff-col-title{
-    margin-left: 5%;
-  }
-  #sx-col-title{
-    margin-left: 6.12%;
-  }
-  #sv-col-title{
-    margin-left: 6.72%;
   }
 }
 @media screen and (max-width: 991px) {
@@ -178,37 +144,11 @@ span.missing {
   .s-3 .col-title {
     text-align: center;
   }
-  #s-col-title{
-    margin-left: 7.84%;
-  }
-  #th-col-title{
-    margin-left: 11.55%;
-  }
-  #ff-col-title{
-    margin-left: 2.8%;
-  }
-  #sx-col-title{
-    margin-left: 3.52%;
-  }
-  #sv-col-title{
-    margin-left: 5.72%;
-  }
-  #fs-col-title{
-    margin-left: 2.1%;
-  }
-  #ff-col-title{
-    margin-left: 2.8%;
-  }
-  #sx-col-title{
-    margin-left: 3.52%;
-  }
-  #sv-col-title{
-    margin-left: 5.72%;
-  }
 }
 @media screen and (max-width: 767px) {
-  #th-col-title{
-    margin-left: 9.55%;
+  .main-table {
+    font-size: 1.2rem;
+     grid-template-columns: 1fr 4fr 4fr 5fr 4fr 3fr 3fr; 
   }
 }
 @media screen and (max-width: 575px) {
@@ -244,25 +184,7 @@ span.missing {
     width: 90%;
     margin: 0;
   }
-  #s-col-title{
-    margin-left: 2.9%;
-  }
-  #th-col-title{
-    margin-left: 4.5%;
-  }
-  #fs-col-title{
-    margin-left: 1%;
-  }
-  #ff-col-title{
-    margin-left: 2.8%;
-  }
-  #sx-col-title{
-    margin-left: 3.52%;
-  }
-  #sv-col-title{
-    margin-left: 5.72%;
-  }
-  .days-col {
-    margin-left: 2%;
+  .main-table {
+    grid-template-columns: 1fr 5fr 3.5fr 3.5fr 4fr 5fr 3fr;
   }
 }
