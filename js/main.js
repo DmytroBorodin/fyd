@@ -6,12 +6,14 @@ let header = document.querySelector('header');
 let headerWrapper = header.querySelector('.wrapper')
 
 console.log(navigator);
-
+debugger;
 if(navigator.userAgent.indexOf("Safari") != -1 && 
 	navigator.userAgent.indexOf("Chrome") != -1){
     headerWrapper.classList.add('chrome-bg');
 }else if(navigator.userAgent.indexOf("Safari") != -1){
     headerWrapper.classList.add('safari-bg');
+}else if (navigator.userAgent.indexOf("Firefox") != -1) {
+	headerWrapper.classList.add('chrome-bg');
 }
 
 
