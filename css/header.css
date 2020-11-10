@@ -7,6 +7,9 @@ header {
 
 .wrapper {
   padding: 4.5rem 0 37rem;
+}
+
+.chrome-bg {
   background-image: url("../imgs/header_bg-min-min.webp");
 }
 
