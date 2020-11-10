@@ -5,9 +5,9 @@ let mainItemBlock = document.getElementById('main-item-block');
 let header = document.querySelector('header');
 let headerWrapper = header.querySelector('.wrapper')
 
-if(navigator.userAgent.indexOf("Safari") != -1){
-    headerWrapper.classList.add('safari-bg');
-}
+console.log(navigator.userAgent);
+
+
 
 
 selectItemsBlockBtn.addEventListener('click', () => {
